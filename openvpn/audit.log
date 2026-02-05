@@ -9,3 +9,6 @@
 [2026-02-05T10:23:10.021040] Server configuration generated
 [2026-02-05T10:32:52.867567] Server configuration generated
 [2026-02-05T10:33:31.835593] Client issued: real1 (365 days)
+[2026-02-05T13:27:47.770716] Added prospo to expiry tracker (expires: 2026-02-06)
+[2026-02-05T13:27:47.771666] Client issued: prospo (1 days)
+[2026-02-05T13:27:47.817363] Auto-delete scheduler started
