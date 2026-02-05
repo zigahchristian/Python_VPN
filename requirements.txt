@@ -1,0 +1,14 @@
+certifi==2026.1.4
+cffi==2.0.0
+charset-normalizer==3.4.4
+crypto==1.4.1
+cryptography==46.0.4
+idna==3.11
+Naked==0.1.32
+pycparser==2.23
+pyOpenSSL==25.3.0
+PyYAML==6.0.3
+requests==2.32.5
+shellescape==3.8.1
+typing_extensions==4.15.0
+urllib3==2.6.3

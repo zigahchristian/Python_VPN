@@ -1,0 +1,36 @@
+# Generate server certificate
+python3 generate_client.py genserver
+
+# Start OpenVPN server (Linux)
+sudo openvpn --config server.conf
+
+# Or on Windows as Administrator
+openvpn --config server.ovpn
+
+
+$ python generate_client.py gencfg
+[✓] Server configuration generated → openvpn\server\server.ovpn
+
+============================================================
+SERVER SETUP INSTRUCTIONS:
+============================================================
+1. Copy these files to your OpenVPN server:
+   - openvpn\server\server.ovpn
+   - openvpn\server\tls-crypt.key
+   - openvpn\ca\ca.crt
+   - openvpn\ca\crl.pem
+
+2. On the server, install OpenVPN:
+   Ubuntu/Debian: sudo apt install openvpn
+   CentOS/RHEL: sudo yum install openvpn
+
+3. Start the server:
+   sudo openvpn --config server.ovpn
+
+4. For auto-start on Linux:
+   sudo cp openvpn\server\openvpn-server.service /etc/systemd/system/
+   sudo systemctl daemon-reload
+   sudo systemctl enable openvpn-server
+   sudo systemctl start openvpn-server
+
+5. Configure firewall to allow UDP port 1194
